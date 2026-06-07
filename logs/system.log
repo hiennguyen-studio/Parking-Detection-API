@@ -1,0 +1,54 @@
+2026-06-07 00:21:10,394 - INFO - src.parking_system - Initializing Parking Detection System...
+2026-06-07 00:21:10,394 - INFO - src.parking_system - Initializing Telegram bot...
+2026-06-07 00:21:10,804 - INFO - src.notify.telegram_bot - Telegram bot initialized
+2026-06-07 00:21:11,545 - INFO - src.camera.camera_handler - Camera connected: Parking Entrance (640x480@30fps)
+2026-06-07 00:21:11,545 - INFO - src.camera.camera_manager - Camera added: entrance
+2026-06-07 00:21:12,299 - INFO - httpx - HTTP Request: POST https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage "HTTP/1.1 404 Not Found"
+2026-06-07 00:21:12,309 - ERROR - src.notify.telegram_bot - Failed to send message: Not Found
+2026-06-07 00:21:12,310 - INFO - src.parking_system -    Active cameras: 1
+2026-06-07 00:21:12,311 - INFO - src.camera.stream_processor - Stream processor started for Parking Entrance
+2026-06-07 00:23:12,915 - INFO - src.parking_system - Initializing Parking Detection System...
+2026-06-07 00:23:12,915 - INFO - src.parking_system - Initializing Telegram bot...
+2026-06-07 00:23:13,296 - INFO - src.notify.telegram_bot - Telegram bot initialized
+2026-06-07 00:23:14,011 - INFO - src.camera.camera_handler - Camera connected: Parking Entrance (640x480@30fps)
+2026-06-07 00:23:14,011 - INFO - src.camera.camera_manager - Camera added: entrance
+2026-06-07 00:23:14,720 - INFO - httpx - HTTP Request: POST https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage "HTTP/1.1 404 Not Found"
+2026-06-07 00:23:14,721 - ERROR - src.notify.telegram_bot - Failed to send message: Not Found
+2026-06-07 00:23:14,723 - INFO - src.parking_system -    Active cameras: 1
+2026-06-07 00:23:14,723 - INFO - src.camera.stream_processor - Stream processor started for Parking Entrance
+2026-06-07 00:30:51,504 - INFO - src.parking_system - Interrupted by user
+2026-06-07 00:30:51,505 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 00:30:51,506 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 00:30:51,920 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 00:30:51,920 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 00:30:51,920 - INFO - src.camera.camera_manager - Camera removed: entrance
+2026-06-07 00:35:14,547 - INFO - src.parking_system - Initializing Parking Detection System...
+2026-06-07 00:35:14,547 - INFO - src.parking_system - Initializing Telegram bot...
+2026-06-07 00:35:14,918 - INFO - src.notify.telegram_bot - Telegram bot initialized
+2026-06-07 00:35:15,593 - INFO - src.camera.camera_handler - Camera connected: Parking Entrance (640x480@30fps)
+2026-06-07 00:35:15,593 - INFO - src.camera.camera_manager - Camera added: entrance
+2026-06-07 00:35:16,314 - INFO - httpx - HTTP Request: POST https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage "HTTP/1.1 404 Not Found"
+2026-06-07 00:35:16,316 - ERROR - src.notify.telegram_bot - Failed to send message: Not Found
+2026-06-07 00:35:16,318 - INFO - src.parking_system -    Active cameras: 1
+2026-06-07 00:35:16,318 - INFO - src.camera.stream_processor - Stream processor started for Parking Entrance
+2026-06-07 00:35:22,300 - INFO - src.parking_system - Interrupted by user
+2026-06-07 00:35:22,301 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 00:35:22,302 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 00:35:22,723 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 00:35:22,723 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 00:35:22,723 - INFO - src.camera.camera_manager - Camera removed: entrance
+2026-06-07 01:07:53,113 - INFO - src.parking_system - Initializing Parking Detection System...
+2026-06-07 01:07:53,113 - INFO - src.parking_system - Initializing Telegram bot...
+2026-06-07 01:07:53,479 - INFO - src.notify.telegram_bot - Telegram bot initialized
+2026-06-07 01:07:54,122 - INFO - src.camera.camera_handler - Camera connected: Parking Entrance (640x480@30fps)
+2026-06-07 01:07:54,123 - INFO - src.camera.camera_manager - Camera added: entrance
+2026-06-07 01:07:54,841 - INFO - httpx - HTTP Request: POST https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage "HTTP/1.1 404 Not Found"
+2026-06-07 01:07:54,843 - ERROR - src.notify.telegram_bot - Failed to send message: Not Found
+2026-06-07 01:07:54,844 - INFO - src.parking_system -    Active cameras: 1
+2026-06-07 01:07:54,844 - INFO - src.camera.stream_processor - Stream processor started for Parking Entrance
+2026-06-07 01:08:58,102 - INFO - src.parking_system - Interrupted by user
+2026-06-07 01:08:58,104 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 01:08:58,105 - INFO - src.camera.stream_processor - Stream processor stopped
+2026-06-07 01:08:58,521 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 01:08:58,521 - INFO - src.camera.camera_handler - Camera disconnected: Parking Entrance
+2026-06-07 01:08:58,521 - INFO - src.camera.camera_manager - Camera removed: entrance

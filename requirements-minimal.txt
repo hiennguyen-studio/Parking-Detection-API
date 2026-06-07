@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+# Minimal requirements - Backend only (without heavy AI/ML libraries)
+# Use this to test the API quickly
+# Later, add torch/opencv separately for AI features
+
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+pydantic[email]>=2.5.0
+
+# FastAPI and web framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+starlette>=0.35.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.23
+alembic>=1.13.1
+
+# Authentication and security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+PyJWT>=2.13.0
+
+# Telegram
+python-telegram-bot>=20.5
+
+# Email
+aiosmtplib>=3.0.1
+
+# Testing
+pytest>=7.4.3
+pytest-asyncio>=0.22.1
+httpx>=0.25.2
+
+# Development
+black>=23.12.1
+flake8>=6.1.0
+isort>=5.13.2
+
+# Utils
+requests>=2.31.0
+click>=8.1.7
+=======
+# Minimal requirements - Backend only (without heavy AI/ML libraries)
+# Use this to test the API quickly
+# Later, add torch/opencv separately for AI features
+
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+pydantic[email]>=2.5.0
+
+# FastAPI and web framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+starlette>=0.35.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.23
+alembic>=1.13.1
+
+# Authentication and security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+PyJWT>=2.13.0
+
+# Telegram
+python-telegram-bot>=20.5
+
+# Email
+aiosmtplib>=3.0.1
+
+# Testing
+pytest>=7.4.3
+pytest-asyncio>=0.22.1
+httpx>=0.25.2
+
+# Development
+black>=23.12.1
+flake8>=6.1.0
+isort>=5.13.2
+
+# Utils
+requests>=2.31.0
+click>=8.1.7
+>>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34

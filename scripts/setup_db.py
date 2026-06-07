@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+"""
+Script to initialize database
+"""
+from src.database.db_manager import DatabaseManager
+from src.config.settings import settings
+
+def init_db():
+    """Initialize database"""
+    print(f"Initializing database at {settings.DATABASE_URL}...")
+    
+    db_manager = DatabaseManager(settings.DATABASE_URL)
+    db_manager.init_db()
+    
+    print("Database initialized successfully!")
+
+if __name__ == "__main__":
+    init_db()
+=======
+"""
+Script to initialize database
+"""
+from src.database.db_manager import DatabaseManager
+from src.config.settings import settings
+
+def init_db():
+    """Initialize database"""
+    print(f"Initializing database at {settings.DATABASE_URL}...")
+    
+    db_manager = DatabaseManager(settings.DATABASE_URL)
+    db_manager.init_db()
+    
+    print("Database initialized successfully!")
+
+if __name__ == "__main__":
+    init_db()
+>>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34

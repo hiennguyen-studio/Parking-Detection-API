@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+# Reference to docker-compose
+# Use: docker-compose -f docker/docker-compose.yml up
+=======
+# Reference to docker-compose
+# Use: docker-compose -f docker/docker-compose.yml up
+>>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34

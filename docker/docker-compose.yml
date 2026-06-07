@@ -1,0 +1,123 @@
+<<<<<<< HEAD
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: parking_db
+    environment:
+      POSTGRES_DB: parking_detection
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: parking_backend
+    environment:
+      DATABASE_URL: postgresql://admin:admin123@postgres:5432/parking_detection
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    command: python -m uvicorn src.backend.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Telegram Bot Service (Optional - separate from API)
+  # telegram-bot:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/Dockerfile
+  #   container_name: parking_telegram_bot
+  #   environment:
+  #     DATABASE_URL: postgresql://admin:admin123@postgres:5432/parking_detection
+  #     TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+  #   depends_on:
+  #     - postgres
+  #   volumes:
+  #     - ./logs:/app/logs
+  #   command: python -m src.notify.telegram_bot
+
+volumes:
+  postgres_data:
+=======
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: parking_db
+    environment:
+      POSTGRES_DB: parking_detection
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: parking_backend
+    environment:
+      DATABASE_URL: postgresql://admin:admin123@postgres:5432/parking_detection
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    command: python -m uvicorn src.backend.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Telegram Bot Service (Optional - separate from API)
+  # telegram-bot:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/Dockerfile
+  #   container_name: parking_telegram_bot
+  #   environment:
+  #     DATABASE_URL: postgresql://admin:admin123@postgres:5432/parking_detection
+  #     TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+  #   depends_on:
+  #     - postgres
+  #   volumes:
+  #     - ./logs:/app/logs
+  #   command: python -m src.notify.telegram_bot
+
+volumes:
+  postgres_data:
+>>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34

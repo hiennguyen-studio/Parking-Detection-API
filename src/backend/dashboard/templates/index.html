@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-home">
+    <h2>Trang Chủ</h2>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Tổng Vi Phạm</h3>
+            <p class="stat-value" id="total-violations">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Hôm Nay</h3>
+            <p class="stat-value" id="today-violations">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Camera Hoạt Động</h3>
+            <p class="stat-value" id="active-cameras">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Đã Xác Nhận</h3>
+            <p class="stat-value" id="confirmed-violations">0</p>
+        </div>
+    </div>
+
+    <div class="charts-section">
+        <h3>Biểu Đồ</h3>
+        <div id="chart-container"></div>
+    </div>
+
+    <div class="recent-violations">
+        <h3>Vi Phạm Gần Đây</h3>
+        <table id="violations-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Biển Số</th>
+                    <th>Camera</th>
+                    <th>Độ Tin Cậy</th>
+                    <th>Thời Gian</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Load statistics on page load
+    loadStatistics();
+    loadRecentViolations();
+</script>
+{% endblock %}
+=======
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-home">
+    <h2>Trang Chủ</h2>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Tổng Vi Phạm</h3>
+            <p class="stat-value" id="total-violations">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Hôm Nay</h3>
+            <p class="stat-value" id="today-violations">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Camera Hoạt Động</h3>
+            <p class="stat-value" id="active-cameras">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Đã Xác Nhận</h3>
+            <p class="stat-value" id="confirmed-violations">0</p>
+        </div>
+    </div>
+
+    <div class="charts-section">
+        <h3>Biểu Đồ</h3>
+        <div id="chart-container"></div>
+    </div>
+
+    <div class="recent-violations">
+        <h3>Vi Phạm Gần Đây</h3>
+        <table id="violations-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Biển Số</th>
+                    <th>Camera</th>
+                    <th>Độ Tin Cậy</th>
+                    <th>Thời Gian</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Load statistics on page load
+    loadStatistics();
+    loadRecentViolations();
+</script>
+{% endblock %}
+>>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34

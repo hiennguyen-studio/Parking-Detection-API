@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block content %}
@@ -64,70 +63,3 @@
     loadStatistics();
 </script>
 {% endblock %}
-=======
-{% extends "base.html" %}
-
-{% block content %}
-<div class="statistics-page">
-    <h2>Thống Kê</h2>
-
-    <div class="stats-filters">
-        <label for="date-from">Từ Ngày:</label>
-        <input type="date" id="date-from">
-        
-        <label for="date-to">Đến Ngày:</label>
-        <input type="date" id="date-to">
-        
-        <label for="camera-select">Camera:</label>
-        <select id="camera-select">
-            <option value="">Tất cả</option>
-        </select>
-        
-        <button onclick="updateStatistics()">Cập Nhật</button>
-    </div>
-
-    <div class="statistics-grid">
-        <div class="stat-section">
-            <h3>Tổng Quan</h3>
-            <div class="stat-items">
-                <div class="stat-item">
-                    <label>Tổng Vi Phạm:</label>
-                    <span id="total">0</span>
-                </div>
-                <div class="stat-item">
-                    <label>Đã Xác Nhận:</label>
-                    <span id="confirmed">0</span>
-                </div>
-                <div class="stat-item">
-                    <label>Chưa Xác Nhận:</label>
-                    <span id="unconfirmed">0</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="stat-section">
-            <h3>Theo Camera</h3>
-            <table id="camera-stats-table">
-                <thead>
-                    <tr>
-                        <th>Camera</th>
-                        <th>Số Vi Phạm</th>
-                        <th>Tỷ Lệ (%)</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="chart-container">
-        <h3>Biểu Đồ Theo Ngày</h3>
-        <canvas id="statistics-chart"></canvas>
-    </div>
-</div>
-
-<script>
-    loadStatistics();
-</script>
-{% endblock %}
->>>>>>> 541a7a3cfad060b477d29a46b7de3894e937aa34
